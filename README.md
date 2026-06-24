@@ -72,17 +72,6 @@ To build a strong foundation in JavaScript for Web Development and Full-Stack De
 - To-Do List
 - Weather App
 
-## 📂 Repository Structure
-
-```
-javascript-learning/
-│
-├── notes/
-├── practice/
-├── mini-projects/
-└── README.md
-```
-
 ## 🔥 Progress
 
 - [ ] JavaScript Basics
