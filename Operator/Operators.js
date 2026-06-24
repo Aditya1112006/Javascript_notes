@@ -26,3 +26,13 @@ console.log(a);
 let c = 10;
 console.log(++c);
 console.log(c--);
+
+// Comparison Operators
+console.log(a > b);
+console.log(a < b);
+console.log(a >= b);
+console.log(a <= b);
+console.log(a == b);
+console.log(a != b);
+console.log(a === b);
+console.log(a !== b);
