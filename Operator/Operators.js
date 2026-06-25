@@ -36,3 +36,11 @@ console.log(a == b);
 console.log(a != b);
 console.log(a === b);
 console.log(a !== b);
+
+
+// logical Operators
+let x = true;
+let y = false;
+console.log(x && y);
+console.log(x || y);
+console.log(!x);
