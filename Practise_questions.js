@@ -102,7 +102,16 @@ if (str[idx] == str[idx].toLowerCase()){
 
 //Write a JavaScript program to strip leading and trailing spaces from a string.
 
-// let str2 = "     I am batman    ";
 let str2 = prompt("Enter the string : ");
 console.log(`Original string = ${str2}`);
 console.log(`String without no spaces = ${str2.trim()}`);
+
+//  Write a JavaScript program to check whether elements exist in an array or not
+
+let arr2 = [1,2,3,4];
+let exist = 3
+if(arr2.indexOf(exist)!= -1){
+    console.log("Element exists in array");
+}else{
+    console.log("Element does not exist in array");
+}
