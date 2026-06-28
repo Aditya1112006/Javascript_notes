@@ -104,7 +104,7 @@ if (str[idx] == str[idx].toLowerCase()){
 
 let str2 = prompt("Enter the string : ");
 console.log(`Original string = ${str2}`);
-console.log(`String without no spaces = ${str2.trim()}`);
+console.log(`String with no spaces = ${str2.trim()}`);
 
 //  Write a JavaScript program to check whether elements exist in an array or not
 
