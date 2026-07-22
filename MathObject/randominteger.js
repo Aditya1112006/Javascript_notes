@@ -2,7 +2,7 @@ let prompt = require("prompt-sync")();
 
 let guess = prompt("Enter number from 1 to 10 : ");
 
-let num = Math.floor(Math.random() * 10);
+let num = Math.floor(Math.random() * 10 + 1);
 console.log("The random number is " + num);
 
 if(guess == num){
