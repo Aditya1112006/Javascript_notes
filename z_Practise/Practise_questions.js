@@ -117,63 +117,92 @@ const prompt = require("prompt-sync")();
 // }
 
 
-// Write a JS program to delete all occurrences of element 'num' in a given array.Example : if arr = [1, 2, 3, 4, 5, 6, 2, 3] & num = 2Result should be arr = [1, 3, 4, 5, 6, 3]
+// // Write a JS program to delete all occurrences of element 'num' in a given array.Example : if arr = [1, 2, 3, 4, 5, 6, 2, 3] & num = 2Result should be arr = [1, 3, 4, 5, 6, 3]
 
-let arr = [5, 9, 3, 6, 8, 3, 2, 4, 6, 2 ,6, 6];
-let num = 6;
-for (let i = arr.length - 1; i >= 0; i--) {
-    if (arr[i] === num) {
-        arr.splice(i, 1);
-    }
-}
+// let arr = [5, 9, 3, 6, 8, 3, 2, 4, 6, 2 ,6, 6];
+// let num = 6;
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     if (arr[i] === num) {
+//         arr.splice(i, 1);
+//     }
+// }
 
-console.log(arr);
+// console.log(arr);
 
-// Write a JS program to find the no of digits in a number.Example : if number = 287152, count = 6
+// // Write a JS program to find the no of digits in a number.Example : if number = 287152, count = 6
 
-let number = 1847494;
-let count = 0
-let copy = number;
-while(copy>0){
-    count++;
-    copy = Math.floor(copy/10);
-}
+// let number = 1847494;
+// let count = 0
+// let copy = number;
+// while(copy>0){
+//     count++;
+//     copy = Math.floor(copy/10);
+// }
 
-console.log(count)
+// console.log(count)
 
-// Write a JS program to find the sum of digit of the number
+// // Write a JS program to find the sum of digit of the number
 
-let number = 1847494;
-let sum = 0
-let copy = number;
-while(copy>0){
-    digit = copy % 10;
-    sum += digit;
-    copy = Math.floor(copy/10);
-}
+// let number = 1847494;
+// let sum = 0
+// let copy = number;
+// while(copy>0){
+//     digit = copy % 10;
+//     sum += digit;
+//     copy = Math.floor(copy/10);
+// }
 
-console.log(sum)
+// console.log(sum)
 
-// Print the factorial of a number n.[Factorial of a number n is the product of all positive integers less than or equal to a given positive integer and denoted by that integer. ]
-// Example :7! (factorial of 7) = 1x2x3x4x5x6x7 = 50405! (factorial of 5) = 1x2x3x4x5 = 1203! (factorial of 3) = 1x2x3 = 60! Is always 1
+// // Print the factorial of a number n.[Factorial of a number n is the product of all positive integers less than or equal to a given positive integer and denoted by that integer. ]
+// // Example :7! (factorial of 7) = 1x2x3x4x5x6x7 = 50405! (factorial of 5) = 1x2x3x4x5 = 1203! (factorial of 3) = 1x2x3 = 60! Is always 1
 
-let n = prompt("Enter the number : ");
+// let n = prompt("Enter the number : ");
 
-let factorial = 1;
+// let factorial = 1;
 
-for(let i = 1;i<=n;i++){
-    factorial *= i;
-}
-console.log(`factorial of ${n} is ${factorial}`)
+// for(let i = 1;i<=n;i++){
+//     factorial *= i;
+// }
+// console.log(`factorial of ${n} is ${factorial}`)
 
-// Find the largest number in an array with only positive numbers
+// // Find the largest number in an array with only positive numbers
 
-let arr = [2,5,10,4,2,7,1,9];
-let large = 0;
+// let arr = [2,5,10,4,2,7,1,9];
+// let large = 0;
 
-for(let i = 0;i<=arr.length;i++){
-    if(large<arr[i]){
-        large = arr[i];
-    }
-}
-console.log(large)
+// for(let i = 0;i<=arr.length;i++){
+//     if(large<arr[i]){
+//         large = arr[i];
+//     }
+// }
+// console.log(large)
+
+// // Create a program that generates the random number representing a dice roll.
+
+// let num = Math.floor(Math.random() * 6) + 1;
+// console.log(num);
+
+// // Create an object representing a car that stores the following properties for the car : name, model, color.
+
+// const car = {
+//     name : "Porche",
+//     model : "911GT3",
+//     Color : "Miami blue"
+// }
+
+// console.log(car.name)
+
+// // Create the object Person with their name , age and city. Edit their's city value fromm original to change it to "New York". Add a new property country set it to the united state.
+// let Person = {
+//     name : "Tony Stark",
+//     age : 53,
+//     city : "Malibu"
+// }
+// console.log(Person);
+// Person.city = "New York";
+// console.log(Person);
+// Person.country = "United State";
+// console.log(Person);
+
+// 
