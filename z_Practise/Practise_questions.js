@@ -205,4 +205,25 @@ const prompt = require("prompt-sync")();
 // Person.country = "United State";
 // console.log(Person);
 
-// 
+// Write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.
+
+const arrayAverage = (arr) =>{
+    let total = 0;
+    for(let number of arr){
+        total += number;
+    };
+    return total / arr.length;
+};
+
+let arr = [2,5,3,8,6,5];
+console.log(arrayAverage(arr));
+
+//Write an arrow function named isEven() that takes a single number as argument and returns if it is even or not.
+
+const isEven = (n) => n % 2 == 0;
+
+let n = 14;
+console.log(isEven(n)); // If true means even
+
+
+
