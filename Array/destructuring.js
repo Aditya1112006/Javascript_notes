@@ -2,7 +2,7 @@ let names = ["tony", "bruce", "steve", "peter"];
 let [winner, runnerup] = names;
 console.log(winner, runnerup);
 
-// Destructing (objects)
+// Destructuring (objects)
 
 const student = {
     name: "karan",
