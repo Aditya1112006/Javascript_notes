@@ -205,25 +205,58 @@ const prompt = require("prompt-sync")();
 // Person.country = "United State";
 // console.log(Person);
 
-// Write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.
+// // Write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.
 
-const arrayAverage = (arr) =>{
-    let total = 0;
-    for(let number of arr){
-        total += number;
-    };
-    return total / arr.length;
-};
+// const arrayAverage = (arr) =>{
+//     let total = 0;
+//     for(let number of arr){
+//         total += number;
+//     };
+//     return total / arr.length;
+// };
 
-let arr = [2,5,3,8,6,5];
-console.log(arrayAverage(arr));
+// let arr = [2,5,3,8,6,5];
+// console.log(arrayAverage(arr));
 
-//Write an arrow function named isEven() that takes a single number as argument and returns if it is even or not.
+// //Write an arrow function named isEven() that takes a single number as argument and returns if it is even or not.
 
-const isEven = (n) => n % 2 == 0;
+// const isEven = (n) => n % 2 == 0;
 
-let n = 14;
-console.log(isEven(n)); // If true means even
+// let n = 14;
+// console.log(isEven(n)); // If true means even
 
 
 
+// Square and sum the array elements using the arrow function and then find the average of the array.
+
+let num = [1,2,3,4,5,6,7,8];
+const square = num.map((num) => num*num);
+console.log(square);
+const add = square.reduce((acc,cur)=>acc+cur);
+console.log(add);
+const average = add / num.length;
+console.log(average);
+
+// Create a new array using the map function whose each element is equal to the original element plus 5.
+
+let number = [1,2,3,4,5];
+console.log(number.map((number) => number+5));
+
+//Create a new array whose elements are in uppercase of words present in the original array.
+
+let word = ["Spidey","Iron Man","Halku"];
+console.log(word.map((word)=>word.toUpperCase()));
+
+// Write a function called doubleAndReturnArgs which accepts an array and a variable number of arguments. The function should return a new array with the original array values and all of the additional arguments doubled.
+
+const doubleAndReturnArgs = (arr,...args) =>[
+    ...arr,
+    ...args.map((v)=>v*2),
+];
+console.log(doubleAndReturnArgs([1,2,3],4,4));
+console.log(doubleAndReturnArgs([2],10,4));
+
+// Write a function called mergeObjects that accepts two objects and returns a new object which contains all the keys and values of the first object and second object.
+
+const mergeObjects = (obj1,obj2) => ({...obj1,...obj2});
+console.log(mergeObjects({a:1,b:2},{c:3,d:4}));
