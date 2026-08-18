@@ -1,16 +1,29 @@
-let h1 = document.querySelector("h1");
-
-function colorChange(color, delay, nextcolorChange){
-    setTimeout(()=>{
-        h1.style.color = color;
-        if(nextcolorChange) nextcolorChange();
-    },delay);
+function saveData(data, sucess, failure){
+    let internetspeed = Math.floor(Math.random()*10) + 1;
+    if(internetspeed > 4){
+        sucess(data);
+    }else{
+        failure();
+    }
 }
 
-colorChange("red", 1000, () => {
-    colorChange("blue", 1000, ()=>{
-        colorChange("orange", 1000, ()=>{
-            colorChange("green", 1000);
-        });
-    });
-});
+saveData("Mugiwara", (data)=>{
+    console.log("Data saved ", data);
+    saveData("Luffy", (data)=>{
+        console.log("Data saved ", data);
+        saveData("Roronoa",(data)=>{
+            console.log("Data saved ", data);
+            saveData("zoro", (data)=>{
+                console.log("Data saved ", data);
+            }, ()=>{
+                console.log("Data is not saved. Internet is unstbale.")
+            })
+        }, ()=>{
+            console.log("Data is not saved. Internet is unstbale.")
+        })
+    }, ()=>{
+        console.log("Data is not saved. Internet is unstbale.")
+    })
+}, () => {
+    console.log("Data is not saved. Internet is unstbale.")
+})
