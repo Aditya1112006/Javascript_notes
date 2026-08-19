@@ -95,7 +95,9 @@ To build a strong foundation in JavaScript for Web Development and Full-Stack De
 
 Learn → Practice → Build → Share
 
-Every concept learned is followed by code practice and a small project.
+Every concept learned is followed by code practice.
+
+I will also share project based one javascript.
 
 ---
 ⭐ This repository documents my journey toward becoming a Full-Stack Developer.
