@@ -9,9 +9,25 @@ function saveData(data){
     })
 };
 
-saveData("Mugiwara")
+saveData("Mugiwara") // Promise
     .then(()=>{
         console.log("Promise was resolved");
+    })
+    .catch(()=>{
+        console.log("Promise was rejected");
+    })
+
+saveData("Mugiwara") // Promise Chaining
+    .then(()=>{
+        console.log("Data 1 : Promise was resolved");
+        return saveData("luffy");
+    })
+    .then(()=>{
+        console.log("Data 2 saved");
+        return saveData("Roronoa ZORO");
+    })
+    .then(()=>{
+        console.log("Data 3 was saved");
     })
     .catch(()=>{
         console.log("Promise was rejected");
