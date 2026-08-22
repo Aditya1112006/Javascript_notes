@@ -1,0 +1,6 @@
+let val = '{"fact":"Approximately 1/3 of cat owners think their pets are able to read their minds.", "length":78}';
+
+let validres = JSON.parse(val);
+
+console.log(validres);
+console.log(validres.fact);
