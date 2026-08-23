@@ -18,3 +18,16 @@ fetch(url)
         console.log(err);
     })
 
+// using async and await
+
+async function catfact() {
+    try{
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data.fact);
+    }catch{
+        console.log("Error 404");
+    }
+}
+
+console.log(catfact());
